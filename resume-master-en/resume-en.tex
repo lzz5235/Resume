@@ -1,0 +1,184 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 个人信息
+\firstname{Li}
+\familyname{Zhaozhong}
+\title{Resume}                      % 可选项、如不需要可删除本行
+\address{Tianshui South Road 222}{Lanzhou,P.R.China}             % 可选项、如不需要可删除本行
+\mobile{+86~18631326316}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{ldm5235@gmail.com}                    % 可选项、如不需要可删除本行
+\homepage{lizhaozhong.info}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\photo[64pt]{avatar2.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{Educational Background}
+\cventry{2013 -- 2016}{Master Degree}{LanZhou University}{School of Information Science and  Enginerring}{Computer Technology}{}
+\cventry{2009 -- 2013}{Bachelor Degree}{University of Electronic Science and Technology of China}{School of Information and Software}{Software Enginerring}{3.49/4}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{Community}
+\cventry{Blog}{\url{http://www.lizhaozhong.info}}{Technology Blog}{}{}{}
+\cventry{GitHub}{\url{http://github.com/lzz5235}}{}{}{}{}
+\cventry{Git page}{\url{http://lzz5235.github.io/}}{}{}{}{}
+
+\section{Project}
+\renewcommand{\baselinestretch}{1.2}
+
+\cventry{2014.8 - present}
+{Linux RAS Module Development for multi-bits error in memory}
+{Memory Machine Check Exception}
+{}{}
+{As a core member of the project, Linux RAS Module Development intends to avoid multi-bits error in memory through signal mechanism instead of panic or killing the tasks, I analyze the MCA subsystem and modify the workflow of Machine Check Exception to notify the target processes/kernel threads. For the processes, elaborating the PALLOC+LXC+CRIU Environment to avoid faults propagation and isolation. In addition, we use memory test offline to test BadPage. The project’s goal intends to accomplish RAS (Reliability, Availability and Serviceability) of the server.}
+
+\cventry{2013.12-2014.6}
+{JOS}
+{C/Assemble Qemu}
+{Personal Projcet}{\url{https://github.com/lzz5235/JOS-kernel}}
+{JOS: will have Unix-like functions (e.g., fork, exec), but is implemented in an exokernel style (i.e., the Unix functions are implemented mostly as user-level library instead of built-in to the kernel). The major parts of the JOS operating system are Booting/Memory management/User-level environments/Preemptive multitasking/File system/shell。}
+
+\cventry{2013.11--2014.1}
+{ChatOnline}
+{Qt C++}
+{Personal Projcet}{\url{https://github.com/lzz5235/ChatOnline}}
+{This project applies to communicate with others online in my Laboratory. Since there is no any cross-platform software, the project is based on qt framework and designed as C/S.}
+
+\cventry{2013.9--2014.1}
+{Wechat platform Development}
+{Java}
+{Personal Project}{Code:lifestyle\_day}
+{Users could input specific information to query what they want, and then lifestyle\_day would response users requirements. I use Java and Tomcat to set up server and parse the xml. The data resource is from Baidu API.}
+
+\cventry{2012.1-12}
+{Distribute storage service}
+{epoll C++ Linux}
+{Innovation Project}{Server Development}
+{ I use epoll, non-blocking and thread poll to response much more users’ operation. Relative copies are included in the server; for example, the file stored on the different servers could avoid specific server broken down.}
+
+\cventry{2012.3-6}
+{Myparted for hard disk partition}
+{Qt C++}
+{Class project}{}
+{I design interface of disk partition with qt. The real operation on hard disk is libparted library. The function of this software includes creating new partition and deleting partition etc.}
+
+\cventry{2011.3-9}
+{Private scheduler manager}
+{Qt C++，Sqlite}
+{}{}
+{Private scheduler manager is a tool to manage our life based on qt framework, the data of software is stored in sqlite. In addition, it could communicate with mobile phone via Bluetooth. Users could use mobile application to manage our scheduler and upload the server.}
+
+\cventry{2011.7-8}
+{Gluttonous on ARM}
+{ARM7 C}
+{Intern in Neusoft}{}
+{I developed the program on LPC2000 development board without any OS. The company provides with drivers of LPC2000 so we can design UI/Gluttonous on the board with c.}
+
+\section{Language }
+\cvline{English}{\textbf{CET-6}，proficient in English reading and writing.Especially in communicate with kernel maintainer with email}
+\cvline{Chinese}{Native language}
+
+\section{Computer Skill}
+\cvline{Language}{C/C++ design pattern > Shell > Python  > Java } 
+\cvline{Architecture}{X86}
+\cvline{Kernel Mechanisms}{MCE, Signal, Kthread,Physical Memory-Management, Interruption, VFS, CFS,Kernel Driver Development}
+\cvline{Toolchain}{gcc, gdb, cscope, ctags, make, strace, Kdump Toolchain, LXC, Docker}
+\cvline{Framework}{Qt,MFC}
+\cvline{Tools}{Linux(Fedora,CentOS,Debian), Vim, Git, \LaTeX, Markdown, Apache}
+\cvline{Database}{MySQL, SQLite，Sybase}
+\cvline{Webpage Template}{WordPress,Jekyll,XOOPS}
+\cvline{Other Tools}{Words, Excel, Powerpoint, Dia, Visio}
+
+
+\section{Award}
+\cvline{2015.6}{Netease MOOC-The Certificate of Software testing}
+\cvline{2015.3}{Netease MOOC-The Certificate of Python program training }
+\cvline{2014.12}{MIIT SKILLS certification-Advanced Linux kernel Engineer}
+\cvline{2014--2015}{The Academic Scholarship in LanZhou University}
+\cvline{2014.5}{The Certificate of senior developer of Sina App Engine}
+\cvline{2013--2014}{The Academic Scholarship in LanZhou University}
+\cvline{2012--2013}{The Third Prize Scholarship in UESTC}
+\cvline{2012.2}{The Certificate of Accomplishment immersion programme organised by NGEE ANN POLYTECHNIC}
+\cvline{2011--2012}{The Adanced administritor certificate of AIX Big machine}
+\cvline{2011.7-8}{The Certificate of Accomplishment Trainning at Neusoft Inc.}
+
+\section{School Experience } % (fold)
+\cventry{2014-2015}
+{Training multi-branch using of git}{}{}{}{My role of project is CM(Configure Manager),including elabroating webgit,git data and Training the workflow of Kernel Development}
+\cventry{2013-2014}
+{DSLab website management}{}{}{}{Data migration}
+\cventry{2013-2014}
+{Lanzhou Google Development Group Volunteer}{}{}{}{I am responsible for community register\url{http://lanzhougdg.sinaapp.com}}
+\cventry{2013--2014}
+{The a speaker of OSS of Lanzhou university}{}{}{}{I communicate with undergraduates of Lanzhou university}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+% 来自BibTeX文件但不使用multibib包的出版物
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% BibTeX的数字标签
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                    % 'publications' 是BibTeX文件的文件名
+
+% 来自BibTeX文件并使用multibib包的出版物
+%\section{出版物}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}               % 'publications' 是BibTeX文件的文件名
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}               % 'publications' 是BibTeX文件的文件名
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.

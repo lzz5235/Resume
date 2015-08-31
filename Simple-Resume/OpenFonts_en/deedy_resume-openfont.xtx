@@ -1,0 +1,221 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Zhaozhong}{Li}{ \urlstyle{same}\href{http://www.lizhaozhong.info}{lizhaozhong.info}\\
+\href{mailto:ldm5235@gmail.com}{ldm5235@gmail.com} | +8618631326316 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{LanZhou University}
+\descript{MS in Computer Technology}
+\location{China, Lanzhou}
+School of Information Science and Enginerring
+\sectionsep
+
+\subsection{University of Electronic Science and Technology of
+China}
+\descript{BS in Software Enginerring}
+\location{China, Sichuan}
+School of Information and Software
+\location{ Major GPA: 3.49 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/lzz5235}{\bf lzz5235} \\
+LinkedIn://  \href{http://www.linkedin.com/profile/view?id=123182341}{\bf lizhaozhong} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+C/C++ design pattern > Shell > Python > Java \\ 
+\subsection{Familiar Kernel}
+MCE, Signal, Kthread,Physical Memory-Management, Interruption, VFS,
+CFS,Kernel Driver development \\
+\location{Familiar:}
+gcc, gdb, cscope, ctags, make, strace, Kdump Toolchain, LXC, Docker \\
+\location{Familiar Tools:}
+Linux(Fedora,CentOS,Debian), Vim, Git, \LaTeX\, Markdown, Apache, Dia \\
+\sectionsep
+\subsection{Algorithm}
+\vspace{\topsep}
+\begin{tightemize}
+\item Using C++ to solve the kinds of Algorithm
+\item Especially in Array/List/Binary Tree
+\item set/stack/hash\_map/list/queue
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Project}
+\runsubsection{Linux RAS Module Development}
+\descript{| Accomplish RAS (Reliability, Availability ad Serviceability) of the server.}
+\location{Oct 2014 - Present | Lanzhou, China}
+\vspace{\topsep}
+As a core member of the project, Linux RAS Module Development intends to
+avoid multi-bits error in memory through signal mechanism instead of panic
+or killing the tasks. \\
+\vspace{\topsep}
+\begin{tightemize}
+\item analyzing the MCA subsystem and modify the workflow of
+Machine Check Exception to notify the target processes/kernel threads. 
+\item elaborating the PALLOC+LXC+CRIU Environment to avoid faults
+propagation and isolation. 
+\item Using memory test offline to test Bad-Page. 
+The project’s goal intends to accomplish RAS (Reliability, Availability and
+Serviceability) of the server.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{JOS}
+\descript{| Smallest Operating System  }
+\location{Dec 2013 –June 2014}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+JOS: will have Unix-like functions (e.g., fork, exec), but is implemented in an ex-
+okernel style (i.e., the Unix functions are implemented mostly as user-level li-
+brary instead of built-in to the kernel).
+\begin{tightemize}
+\item Booting
+\item Memory management 
+\item User-level environments
+\item Preemptive multitasking
+\item File system
+\item Shell
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Wechat platform Development}
+\descript{| Code:lifestyle day}
+\location{Sep 2013 - April 2014} 
+\vspace{\topsep}
+Users could input specific information to query what they want, and then
+lifestyle day would response users requirements. I use Java and Tomcat to set
+up server and parse the xml. The data resource is from Baidu API.
+\sectionsep
+
+\runsubsection{Distribute storage service}
+\descript{| Server Development}
+\location{Dec 2012 -June 2013 }
+\vspace{\topsep}
+Using epoll, non-blocking and thread poll to response much more users’ oper-
+ation. Relative copies are included in the server; for example, the file stored on
+the different servers could avoid specific server broken down.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2015.6	     & Netease MOOC-The Certificate of Software testing \\
+2015.3       & Netease MOOC-The Certificate of Python program training \\
+2014.12	     & MIIT SKILLS certification-Advanced Linux kernel Engineer\\
+2014         & The Academic Scholarship in LanZhou University\\
+2013	     & The Academic Scholarship in LanZhou University\\
+2013         & The Third Prize Scholarship in UESTC\\
+2012.2     & The Certificate of Accomplishment immersion programme organised \\ 
+												& by NGEE ANN POLYTECHNIC  \\
+2012     & The Adanced administritor certificate of AIX Big machine \\
+2011     & The Certificate of Accomplishment Trainning at Neusoft Inc. \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

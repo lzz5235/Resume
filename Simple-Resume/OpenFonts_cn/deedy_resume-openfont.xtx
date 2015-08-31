@@ -1,0 +1,206 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{CJKutf8} 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{肇中}{李}{ \urlstyle{same}\href{http://www.lizhaozhong.info}{lizhaozhong.info}\\
+\href{mailto:ldm5235@gmail.com}{ldm5235@gmail.com} | +8618631326316 
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{教育背景} 
+
+\subsection{兰州大学}
+\descript{硕士，计算机技术}
+\location{中国，兰州}
+信息科学与工程学院
+\sectionsep
+
+\subsection{电子科技大学}
+\descript{本科，软件工程}
+\location{中国，四川}
+信息与软件工程学院(示范性软件学院)
+\location{GPA: 3.49 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/lzz5235}{\bf lzz5235} \\
+LinkedIn://  \href{http://www.linkedin.com/profile/view?id=123182341}{\bf lizhaozhong} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{技能}
+\subsection{编程语言}
+\vspace{\topsep}
+C/C++ design pattern > Shell > Python > Java \\ 
+\vspace{\topsep}
+\subsection{熟悉 Kernel}
+MCE, Signal, Kthread,Physical Memory-Management, Interruption, VFS,
+CFS,Kernel Driver development \\
+\vspace{\topsep}
+\subsection{熟悉:}
+gcc, gdb, cscope, ctags, make, strace, Kdump Toolchain, LXC, Docker \\
+\vspace{\topsep}
+\subsection{熟悉的工具:}
+Linux(Fedora,CentOS,Debian), Vim, Git, \LaTeX\, Markdown, Apache, Dia \\
+\vspace{\topsep}
+\subsection{算法}
+使用 C/C++ 解决算法问题 \\
+数组/链表/树 \\
+set/stack/hash\_map/list/queue
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Project
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{项目}
+\runsubsection{Linux RAS 模块开发}
+\descript{| 实现服务器RAS (Reliability, Availability ad Serviceability) 特性。}
+\location{2014.8 - 现在}
+\vspace{\topsep}
+分析当前MCA内核子系统的工作原理,修改Machine Check Exception 的工作流程。\\ 
+使用PALLOC+LXC+CRIU 进行错误抑制与错误隔离。\\
+使用在线内存检测与离线内存检测方式,达到服务器的平稳运行,而不会因为MCE相关错误\\而中断服务。
+
+\sectionsep
+
+\runsubsection{JOS}
+\descript{| 微型操作系统 }
+\location{2013.12  -2014.6}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+JOS 是一个Toy Kernel,可以运行在qemu中。通过实现这五大部分的代码,可以使得JOS运行起来，实现OS\\基本的功能。
+包括Booting/Memory management/User-level environments/Preemptive multitasking/File system/Shell
+\sectionsep
+
+\runsubsection{微信平台开发}
+\descript{| 微信公众号lifestyle day}
+\location{2013.9 - 2014.6} 
+\vspace{\topsep}
+生活小贴士是一个基于微信公众平台开发的微信公众号,后台使用Java+Tomcat对于用
+请求进行解析,然后返回用户需要的结果。本公众号在本人的测试号中实现高级菜单,可
+以方便进行各种点击操作。某些特定功能API依赖Baidu等第三方API,使用dom4j包对返
+回数据进行解析。然后发送给用户。
+\sectionsep
+
+\runsubsection{分布式网盘系统}
+\descript{| 服务端开发}
+\location{2012.12 -2013.6 }
+\vspace{\topsep}
+使用可复用epoll非阻塞+线程池框架,配合Shell脚本,针对客户端请求进行操作,包括将
+用户数据多地存储,并将文件返回给用户。该框架允许更多的用户对网盘进行读写,提高
+服务器运行效率。
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2015.6	     & 网易MOOC课程-软件测试方法和技术实践证书 \\
+2015.3       & 网易MOOC课程-Python程序设计优秀证书 \\
+2014.12	     & 工信部人才紧缺职业技能认证- 高级 Linux 内核开发工程师\\
+2014.5		 & 新浪SAE中级开发者证书 \\
+2014         & 兰州大学研究生一等奖学金\\
+2013	     & 兰州大学研究生一等奖学金\\
+2013         & 电子科技大学人民三等奖学金\\
+2012.2     & 新加坡义安理工文化交流活动毕业证书 \\ 
+2012     & IBM大型机AIX高级管理员证书 \\
+2011     & 大连东软实训结业证书 \\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

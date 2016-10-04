@@ -1,0 +1,194 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Xuting}{Zhang}{
+\href{mailto:zhangxuting91@yahoo.ca}{zhangxuting91@yahoo.ca} | +1(613)-265-5462 +8618510253518
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Ottawa University}
+\descript{Business with Marketing Program}
+\location{Canada, Ottawa | Sep 2013- Dec 2016}
+Telfer School of Management
+\vspace{\topsep}
+\begin{tightemize}
+\item Human Resource Management
+\item Management Information Systems
+\item Consumer Behaviour
+\item Services Marketing
+\item Market Research
+\item Advertising and Sales Promotion Management
+\item Marketing Strategy
+\item Promotional Planning Practicum
+\item Business Communication Skills
+\end{tightemize}
+\sectionsep
+
+\subsection{Waterloo University}
+\descript{Mathematics}
+\location{Canada, Ottawa | Sep 2012- Sep 2013}
+Faculty Of Mathematics
+\vspace{\topsep}
+\begin{tightemize}
+\item Calculus
+\item liner algebra
+\end{tightemize}
+\sectionsep
+
+\subsection{Beijing Concord college of Sino-Canada}
+\descript{High School in Beijing}
+\location{China, Beijing | Feb 2010- July 2012}
+I graduated with a mark of 92\%. In my studies I focused on business related courses and participated in many mathematical competitions. I also learn microeconomics and statistics in this school.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\vspace{\topsep}
+\begin{tightemize}
+\item Word, Excel, PowerPoint, Access.
+\item \LaTeX
+\item Excellent English Writing.
+\end{tightemize}
+\section{Language}
+\vspace{\topsep}
+\begin{tightemize}
+\item Chinese - Native language.
+\item English - 10 years fluency.
+\end{tightemize}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Marketing & Related Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Marketing \& Related Experience}
+\runsubsection{Sales Manager Assistant}
+\descript{}
+\location{Jan 2013 – Feb 2013 | Changzhou, China}
+\vspace{\topsep}
+\begin{tightemize}
+\item Help sales manager to answer calls 
+\item Deal with customer-related problems
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Administrative assistant}
+\descript{I did this job in Lian Life Insurance Ltd.}
+\location{July 2016 – Sep 2016 | Changzhou, China}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Informing all teams attend the meeting on time
+\item Helpe managers and customers to check insurance contacts
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Leadership & Activities
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Leadership \& Activities} 
+\runsubsection{International Mathematics Competitions}
+\descript{Taking part in Galois, Fermat, and Euclid competitions}
+\location{Feb 2011 – Apr 2012 | Beijing, China}
+\vspace{\topsep}
+\sectionsep
+
+\runsubsection{Modeling Contest}
+\descript{}
+\location{Nov 2011 - Nov 2011 | Beijing, China}
+\vspace{\topsep}
+This contest needs competitors to finish a problem in 36 hours, and the contest intends to exam students’ ability of mathematics, programing, and English writing.    
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}

@@ -115,7 +115,12 @@ Faculty Of Mathematics
 \subsection{Beijing Concord college of Sino-Canada}
 \descript{High School in Beijing}
 \location{China, Beijing | Feb 2010- July 2012}
-I graduated with a mark of 92\%. In my studies I focused on business related courses and participated in many mathematical competitions. I also learn microeconomics and statistics in this school.
+\vspace{\topsep}
+\begin{tightemize}
+\item Graduated with a mark of 92\%. 
+\item Focused on business related courses 
+\item Participated in many mathematical competitions
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -180,7 +185,7 @@ I graduated with a mark of 92\%. In my studies I focused on business related cou
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
 \item Informing all teams attend the meeting on time
-\item Helpe managers and customers to check insurance contacts
+\item Helped managers and customers to check insurance contacts
 \end{tightemize}
 \sectionsep
 
@@ -189,7 +194,7 @@ I graduated with a mark of 92\%. In my studies I focused on business related cou
 \location{ Sep 2015 | Ottawa, Canada}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Wrote memo and presented to Chief Executive Officer situation analysis and recommendations
+\item Wrote memo and presented problems and recommendations to Chief Executive Officer 
 \item Developed communication skills within the organization
 \end{tightemize}
 \sectionsep
@@ -199,8 +204,8 @@ I graduated with a mark of 92\%. In my studies I focused on business related cou
 \location{Jan 2013 – Feb 2013 | Changzhou, China}
 \vspace{\topsep}
 \begin{tightemize}
-\item Help sales manager to answer calls 
-\item Deal with customer-related problems
+\item Helped sales manager to answer calls 
+\item Improved the ability of building customers relationships
 \end{tightemize}
 \sectionsep
 
@@ -221,7 +226,7 @@ I graduated with a mark of 92\%. In my studies I focused on business related cou
 \descript{}
 \location{Nov 2011 - Nov 2011 | Beijing, China}
 \vspace{\topsep}
-This contest needs competitors to finish a problem in 36 hours, and the contest intends to exam students’ ability of mathematics, programing, and English writing.    
+This contest requires competitors to finish a problem in 36 hours, and the contest intends to exam students’ ability of mathematics, programing, and English writing.    
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,0 +1,111 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+%\moderncvtheme[blue]{casual}                 % optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+\moderncvtheme[blue]{classic}                % idem
+\usepackage{xunicode, xltxtra}
+\XeTeXlinebreaklocale "zh"
+\widowpenalty=10000
+
+%\setmainfont[Mapping=tex-text]{文泉驿正黑}
+
+% character encoding
+%\usepackage[utf8]{inputenc}                   % replace by the encoding you are using
+\usepackage{CJKutf8}
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\recomputelengths                             % required when changes are made to page layout lengths
+\setmainfont[Mapping=tex-text]{Hiragino Sans GB}
+\setsansfont[Mapping=tex-text]{Hiragino Sans GB}
+\CJKtilde
+
+% personal data
+
+%% start of file `template-zh.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+% 个人信息
+\firstname{张}
+\familyname{旭婷}
+\title{个人简历}                      % 可选项、如不需要可删除本行
+\address{190 Lees Ave Unit 1704,ON K1S 5L5}{Ottawa}             % 可选项、如不需要可删除本行
+\mobile{+1(613)-265-5462}                         % 可选项、如不需要可删除本行
+%\phone{+2~(345)~678~901}                          % 可选项、如不需要可删除本行
+%\fax{+3~(456)~789~012}                            % 可选项、如不需要可删除本行
+\email{zhangxuting91@yahoo.ca}                    % 可选项、如不需要可删除本行
+%\homepage{lizhaozhong.info}                  % 可选项、如不需要可删除本行
+%\extrainfo{附加信息 (可选项)}                  % 可选项、如不需要可删除本行
+\photo[64pt]{avatar2.jpg}                  % ‘64pt’是图片必须压缩至的高度、‘0.4pt‘是图片边框的宽度 (如不需要可调节至0pt)、’picture‘ 是图片文件的名字;可选项、如不需要可删除本行
+%\quote{引言(可选项)}                           % 可选项、如不需要可删除本行
+
+% 显示索引号;仅用于在简历中使用了引言
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% 分类索引
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            内容
+%----------------------------------------------------------------------------------
+\begin{document}
+\maketitle
+
+\section{教育背景}
+\cventry{2016 -- 2013}{本科}{渥太华大学}{Telfer School of Management}{市场营销/人力资源管理}{}
+\cventry{2012 -- 2013}{本科}{滑铁卢大学}{Faculty Of Mathematics}{数学专业}{}
+\cventry{2010 -- 2012}{高中}{北京中加枫华国际学校}{}{Mathematical/Microeconomics/Statistics}{}
+
+%\section{毕业论文}
+%\cvitem{题目}{\emph{题目}}
+%\cvitem{导师}{导师}
+%\cvitem{说明}{\small 论文简介}
+
+\section{市场 \& 相关经历}
+\renewcommand{\baselinestretch}{1.2}
+\cventry{2016.8 -- 至今}
+{某海军作战系统任务规划模块开发}
+{C++,Qt}
+{}{项目核心成员}
+{该海军作战系统基于已有的内部类库开发，每个功能模块为一个lib文件。本人完成该任务规划模块的界面设计和数据库交互，按照需求设计数据库表结构，配合该作战系统的其他子模块完成既定需求。}
+
+\cventry{2016.7 -- 2016.8}
+{某海军后勤管理系统国产化移植和性能优化}
+{Java,JavaFx,Oracle}
+{}{}
+{该作战系统基于 Java Swing 开发，移植系统初期系统运行缓慢。该项目代码行数10W+，通过断点跟踪，分析系统执行路径和性能瓶颈，重写系统中与XML操作相关模块和失效命令，对关键数据结构HashMap进行对象序列化和反序列化，加快启动过程。将该系统数据库从Oracle迁移到国产数据库，添加关键索引以加快数据库存取速率。}
+
+\cventry{2014.8 -- 2015.9}
+{内存多Bit错误修复内核模块开发}
+{Memory Kernel MCE}
+{}{项目核心成员}
+{分析当前MCA内核子系统的工作原理，修改Machine Check Exception的工作流程，发信号通知内核线程终止运行，以防止更加严重的panic。对于用户层的进程，使用PALLOC+LXC+CRIU 进行错误抑制与错误隔离。配合使用在线内存检测与离线内存检测方式，达到服务器的平稳运行，而不会因为MCE相关错误而中断服务。编写大量桩模块，进程/内核线程配合 MCA 的处理。}
+
+
+\section{领导力 \& 校园经历} % (fold)
+\cventry{2014-2015}
+{国际数学竞赛}{}{}{}{}
+\cventry{2013-2014}
+{数学建模竞赛}{}{}{}{这个竞争要求选手在36小时内解决一个指定问题，大赛考察学生的数学能力、编程能力和英文写作。}
+
+\section{语言技能}
+\cvline{英语}{可用英语流利的交流，拥有出色的英语写作能力。}
+\cvline{普通话}{母语}
+
+\section{计算机技能}
+\cvline{Office}{Word, Excel, PowerPoint, Access.}
+\cvline{文字排版}{\LaTeX}
+
+\closesection{}                   % needed to renewcommands
+\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+\end{document}
+
+
+%% 文件结尾 `template-zh.tex'.

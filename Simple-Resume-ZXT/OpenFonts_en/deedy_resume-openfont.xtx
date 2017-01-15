@@ -65,8 +65,8 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Xuting}{Zhang}{{190 Lees Ave Unit 1704, Ottawa, ON K1S 5L5}\\
-\href{mailto:zhangxuting91@yahoo.ca}{zhangxuting91@yahoo.ca} | +1(613)-265-5462 +8618510253518
+\namesection{Xuting}{Zhang}{{No.4 South Fourth Street, Zhongguancun, Beijing}\\
+\href{mailto:zhangxuting91@163.com}{zhangxuting91@163.com} | +8615651232558
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -85,7 +85,7 @@
 
 \subsection{Ottawa University}
 \descript{Business with Marketing Program}
-\location{Canada, Ottawa | Sep 2013- Dec 2016}
+\location{Canada, Ottawa | Sep 2012- June 2017}
 Telfer School of Management
 \vspace{\topsep}
 \begin{tightemize}
@@ -98,17 +98,6 @@ Telfer School of Management
 \item Marketing Strategy
 \item Promotional Planning Practicum
 \item Business Communication Skills
-\end{tightemize}
-\sectionsep
-
-\subsection{Waterloo University}
-\descript{Mathematics}
-\location{Canada, Waterloo | Sep 2012- Sep 2013}
-Faculty Of Mathematics
-\vspace{\topsep}
-\begin{tightemize}
-\item Calculus
-\item Liner algebra
 \end{tightemize}
 \sectionsep
 
@@ -130,7 +119,7 @@ Faculty Of Mathematics
 \section{Skills}
 \vspace{\topsep}
 \begin{tightemize}
-\item Word, Excel, PowerPoint, Access.
+\item Office.
 \item \LaTeX
 \item Excellent English Writing.
 \end{tightemize}
@@ -158,14 +147,13 @@ Faculty Of Mathematics
 
 \section{Marketing \& Related Experience}
 \runsubsection{CRTC MICHEL CLOUTIER Project}
-\descript{Promotional Planning Practicum Teamwork}
+\descript{Top 3 and prize money is awarded.}
 \location{Sep 2016 | Ottawa, Canada}
 \vspace{\topsep}
 \begin{tightemize}
-\item Conducted comprehensive market research and analysis of most recent data on Canadian Radio-television Commission
-\item Developed a marketing strategy to promote CRTC within the budget
-\item Implemented the Integrated Marketing Communication Plan  within current team resources
-\item Improved promotional and resource management skills
+\item Do the primary research (online questionnaire) and secondary research 
+\item Write the relative report according to the market research
+\item Find the issues and present strategic recommendations to CRTC’s Chairman and managers
 \end{tightemize}
 \sectionsep
 
@@ -174,8 +162,9 @@ Faculty Of Mathematics
 \location{July 2016 | Ottawa, Canada}
 \vspace{\topsep}
 \begin{tightemize}
-\item Simulated Intopia business game with more than 30 teams
-\item Enhanced strategic planning and leadership skills
+\item Simulated Intopia business game with other 30 teams
+\item Analyze the real case and provide strategic recommendations
+\item Share the experience of running a business
 \end{tightemize}
 \sectionsep
 
@@ -215,18 +204,17 @@ Faculty Of Mathematics
 %     Leadership & Activities
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Leadership \& Activities} 
+\section{Activities} 
+\runsubsection{CRTC(Canadian Radio-television and Telecommunications Commission)MICHEL CLOUTIER Project}
+\descript{Top 3 Team and Prize award}
+\location{Sep 2016 - Dec 2016 | Ottawa, Canada}
+\vspace{\topsep}
+\sectionsep
+
 \runsubsection{International Mathematics Competitions}
 \descript{Taking part in Galois, Fermat, and Euclid competitions}
 \location{Feb 2011 – Apr 2012 | Beijing, China}
 \vspace{\topsep}
-\sectionsep
-
-\runsubsection{Modeling Contest}
-\descript{}
-\location{Nov 2011 - Nov 2011 | Beijing, China}
-\vspace{\topsep}
-This contest requires competitors to finish a problem in 36 hours, and the contest intends to exam students’ ability of mathematics, programing, and English writing.    
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -235,6 +223,7 @@ This contest requires competitors to finish a problem in 36 hours, and the conte
 
 \section{Awards} 
 \begin{tabular}{rll}
+2016.12      & CRTC’s semi-final presentation and win the top 3 \\ 
 2012.5       & Beijing Outstanding Student \\
 2011.11	     & Modeling Contest Honorable Award \\
 \end{tabular}

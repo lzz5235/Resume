@@ -72,13 +72,19 @@
 
 \section{项目经历}
 \renewcommand{\baselinestretch}{1.2}
+\cventry{2017.8 -- 至今}
+{船舶轨迹数据存储系统设计与轨迹相似性算法设计实现}
+{Python,Elasticsearch}
+{}{}
+{对多源船舶轨迹数据进行预处理（不同格式的数据清洗、去重和入库），采用密度聚类算法/层次聚类算法对航迹和停泊点进行挖掘，将舰船轨迹、吨位和速度作为相似性度量，得到舰船轨迹相似性，并将聚类航迹进行绘制。}
+
 \cventry{2017.4 -- 至今}
 {卫星光学图像的舰船目标检测模块开发}
-{Keras,Faster-RCNN}
+{Keras,Python}
 {}{}
-{对卫星光学图像数据进行预处理（图片切割，标注，图片通道调整，图像均衡），修改Faster-RCNN代码，尝试使用vgg16和resnet50作为特征提取的基础卷积神经网络对舰船目标进行训练，根据神经网络中间结果和输出测试结果进行参数调优。统计AUC，计算F1 Score等性能指标，并将数据利用matplotlib进行绘制。}
+{对卫星光学图像进行预处理（图片切割，标注，图片通道调整），修改Faster-RCNN代码，尝试使用vgg16和resnet50作为特征提取的基础卷积神经网络对舰船目标进行训练，根据神经网络输出的中间结果进行参数调优（输入大小，rpn，nms）。统计top 1\% 与数据可视化。}
 
-\cventry{2016.9 -- 至今}
+\cventry{2016.9 -- 2017.5}
 {基于QGIS的卫星图像软件的二次优化}
 {QGIS,GDAL,C++}
 {}{}
@@ -114,10 +120,10 @@
 {个人项目}{\url{https://github.com/lzz5235/JOS-kernel}}
 {JOS 是一个Toy Kernel，可以运行在qemu中。JOS涵盖了操作系统的五大部分Booting/Memory management/User-level environments/Preemptive multitasking/File system/shell。通过实现这五大部分的代码，可以使得JOS运行起来。}
 
-\section{硕士毕业论文}
-\cvitem{题目}{\emph{基于外内核操作系统的文件系统研究}}
-%\cvitem{导师}{导师}
-\cvitem{说明}{\small{重新设计实现了文件系统每个层次的数据结构、函数调用、封装磁盘驱动函数和用户进程通信的协议，可以复磁盘驱动函数和用户进程通信的协议，可以复用IPC通信协议直接对磁盘进行操作。最后通过测试验证了关键机制和文件系统实现功能的正确性 、文件系统顺序访问和随机访问的性能 。}}
+%\section{硕士毕业论文}
+%\cvitem{题目}{\emph{基于外内核操作系统的文件系统研究}}
+%%\cvitem{导师}{导师}
+%\cvitem{说明}{\small{重新设计实现了文件系统每个层次的数据结构、函数调用、封装磁盘驱动函数和用户进程通信的协议，可以复磁盘驱动函数和用户进程通信的协议，可以复用IPC通信协议直接对磁盘进行操作。最后通过测试验证了关键机制和文件系统实现功能的正确性 、文件系统顺序访问和随机访问的性能 。}}
 
 
 \section{语言技能}
@@ -125,14 +131,14 @@
 \cvline{普通话}{母语}
 
 \section{计算机技能}
-\cvline{机器学习}{熟悉RCNN，卷积神经网络算法，了解线性回归/分类/SVM/聚类/决策树，可使用sklearn,pandas对数据进行预处理,可使用matplotlib对数据进行可视化}
-\cvline{编程语言}{C/C++ 设计模式 > Python > Java > Shell} 
-\cvline{Python 库}{numpy,sklearn,matplotlib,PIL,Keras,basemap}
-\cvline{内核机制}{mca, signal, kthread,physical memory management, interruption, vfs, kernel driver}
+\cvline{机器学习}{熟悉RCNN，卷积神经网络算法，了解线性回归/Logistic Regression/聚类，numpy,pandas,matplotlib}
+\cvline{编程语言}{C/C++ 设计模式 > Python } 
+\cvline{Python 库}{numpy,sklearn,matplotlib,Keras,basemap}
+\cvline{内核机制}{mca, signal, kthread,physical memory management, vfs, kernel driver}
 \cvline{Toolchain}{gcc, gdb, cscope, ctags, make, cmake, Kdump Toolchain, LXC, Docker}
 \cvline{框架}{Qt,PyQt}
 \cvline{工具}{linux, vim, git, svn,\LaTeX, markdown, nginx}
-\cvline{数据库}{mysql,sqlite}
+\cvline{数据库}{mysql,elasticsearch,sqlite}
 
 
 \section{实习经验及奖励}

@@ -42,12 +42,10 @@
 % Change the font if you want to.
 
 % If using pdflatex:
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage[default]{lato}
+\usepackage{CJKutf8} 
 
 % If using xelatex or lualatex:
-% \setmainfont{Lato}
+\setmainfont{SimSun}
 
 % Change the colours if you want to
 \definecolor{Mulberry}{HTML}{72243D}
@@ -67,20 +65,20 @@
 %\addbibresource{sample.bib}
 
 \begin{document}
-\name{Yoann E. A. Le Bihan}
-\tagline{Open Source Expert Consultant (15+ years)}
-\photo{2.8cm}{Yo_prof}
+\name{李肇中}
+\tagline{服务端开发工程师}
+%\photo{1.5cm}{Yo_prof.jpg}
 \personalinfo{%
   % Not all of these are required!
   % You can add your own with \printinfo{symbol}{detail}
-  \email{yoann@yoann.info}
-  \phone{+352 691 91 97 98}
+  \email{\url{ldm5235@gmail.com}}
+  \phone{+86 18510253518}
   %\mailaddress{Address, Street, 00000 County}
-  \twitter{@ylebihan}
-  \location{Luxembourg}\\
-  \homepage{www.yoann.info}
-  \linkedin{linkedin.com/in/yoannlebihan}
-  \github{github.com/ylebihan}
+  %\location{Beijing}\\
+  \homepage{\url{https://www.lizhaozhong.info}}
+  %\homepage{\url{http://lzz5235.github.io}}
+  \linkedin{\url{https://www.linkedin.com/in/lizhaozhong/}}
+  \github{\url{https://github.com/lzz5235}}
   %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
 %   \orcid{orcid.org/0000-0000-0000-0000}
 }
@@ -94,106 +92,67 @@
 %% You can always just use \marginpar{...} if you do
 %% not need to align the top of the contents to any
 %% \cvsection title in the "main" bar.
-\cvsection[page1sidebar]{Experience}
+\cvsection[page1sidebar]{项目经历}
 
-\cvevent{Infrastructure Engineering Transition Manager (contractor)}{Euronext}{January 2017 -- Ongoing}{Paris, France}
+\cvevent{摄像头云存储支付系统升级与对接(Java)}{接入小米支付系统,对接摄像头VIP用户,为付费用户提供更多的个性化服务}{2018.10 - 至今}{小米科技}
 \begin{itemize}
-\item Ad-interim management of a team of 10 engineers (systems, virtualisation, storage, backup, DBAs)
-\item HR management, recruitment (screening and interviews)
-\item Interaction and negotiation with suppliers
-\item Transition to IaaS/DevOps (industrialisation and Agile provisioning)
-\item Multicultural environment (teams in Northern Ireland and Portugal)
-\item Highly critical, highly available environment, low latency trading
-\item Technical environment: RHEL 5/6/7; Ansible; Satellite 6; HP 3PAR; EMC DataDomain
+\setlength{\itemindent}{.2in}
+\item 对接小米全球支付(web支付和米家小米钱包SDK支付)
+\item 对接apple pay支付
 \end{itemize}
 
 \divider
 
-\cvevent{Senior Linux Expert \& Project Manager (contractor)}{Clearstream Services}{February 2011 -- December 2016}{Luxembourg}
-\begin{itemize}
-\item \textbf{Red Hat Satellite 6 / Standard Operating Environment}
-\setlength{\itemindent}{.2in}
-\item Single point of contact for the Clearstream/DB Group
-\item Coordination of the SOE project with Red Hat Consulting
-\item Project management \& cross-country coordination of resources
-\setlength{\itemindent}{.4in}
-\item Integration with Jenkins/Git, Puppet, DHCP / DNS
-\item Interaction with virtual environments \& cloud project
-\setlength{\itemindent}{0in}
-\item \textbf{Daily administration}
-\setlength{\itemindent}{.2in}
-\item RPM packaging, management of internal software builds and middleware packages from third-party vendors (e.g. Red Hat JBoss), Satellite channels management and follow-up
-\item L2 \& L3 support / troubleshooting of RHEL and Satellite servers
-\item Maintenance of kickstart scripts and deployment documentation
-\setlength{\itemindent}{0in}
-\item \textbf{Technical point of contact for several projects}
-\setlength{\itemindent}{.2in}
-\item Docker containerisation PoC
-\item Cloud-compliant OS builds for AWS and private cloud solutions
-\item Integration of a new subsidiary's DMS into Clearstream's IT
-\setlength{\itemindent}{0in}
-\item \textbf{DNS migration project}
-\setlength{\itemindent}{.2in}
-\item Deployment of PowerDNS with replicated MariaDB instances
-\item Bind zones automated migration
-\setlength{\itemindent}{0in}
-\item \textbf{Configuration management \& Compliance checks}
-\setlength{\itemindent}{.2in}
-\item Puppet PoC design \& deployment
-\item Red Hat Satellite 5's configuration channels deployment
-\item Development of management scripts based on Satellite's API
-\setlength{\itemindent}{0in}
-\item \textbf{Servers automated inventory}
-\setlength{\itemindent}{.2in}
-\item OCSng inventory server deployment \& customisation
-\item Massive deployment of OCSng's agent (Linux \& Solaris)
-\item Full assets lifecycle workflow design
-\end{itemize}
+\cvevent{猫眼低功耗设备人脸识别模块研发(Java)}{对接人脸算法模块，将人脸算法集成到米家App，完成猫眼对家人头像\\的管理与识别}{2018.7 - 2018.10}{小米科技}
 
-\addnextpagesidebar[-1ex]{page2sidebar}
-\clearpage
-
-\cvevent{Linux \& Virtualisation Expert (contractor)}{Ministère de l'intérieur}{May 2010 -- February 2011}{Paris, France}
 \begin{itemize}
-\item \textbf{Deployment of new Linux hosting environments}
-\setlength{\itemindent}{.2in}
-\item PXE + kickstart industrial deployment of RHEL 4/5
-\item Deployment of hosting platforms based on Debian Linux
-\item Deployment of new applications (planning \& resource)
-\setlength{\itemindent}{0in}
-\item \textbf{Daily management of a thousand Linux servers hosting environment}
-\setlength{\itemindent}{.2in}
-\item Incident management (in priority for production)
-\item Interaction with storage, network, and middleware teams
-\setlength{\itemindent}{0in}
-\item \textbf{Data center virtualisation project}
-\setlength{\itemindent}{.2in}
-\item VMware vSphere 4 Enterprise Plus
-\item Deployment, configuration and customisation (ESX and vCenter)
-\item Best-practices and documentation writing
-\item PowerShell scripting (management and administration scripts)
+\item \textbf{设计人脸识别pipeline}
+\item \textbf{设计实现人脸识别异步消息系统}
+\item \textbf{设计实现人脸识别数据表结构}
 \end{itemize}
 
 \divider
 
-\cvevent{Freelance Consultant \& Entrepreneur}{Self-employed}{June 2002 -- March 2010}{Paris area, France}
-Previous experience includes:
-\smallskip
+\cvevent{摄像头报警推送系统研发(Java)}{对接人形算法模块，将人形算法集成到米家摄像头App，降低报警推送误报率}{2018.3 - 2018.10}{小米科技}
+
 \begin{itemize}
-\item \textbf{Infrastructure Architect \& Virtualisation Expert at BNP Paribas}\\
-		(December 2009 -- March 2010)
-\item \textbf{Virtualisation Consultant \& Trainer at Virtao}\\
-		(April 2009 -- August 2009)
-\item \textbf{Security Consultant at Ingenico}\\
-		(December 2008 -- April 2009)
-\item \textbf{Linux System Engineer at NYSE Euronext}\\
-		(June 2008 -- November 2008)
-\item \textbf{Developer \& Linux System Consultant at Meteor Networks}\\
-		(January 2008 -- May 2008)
-\item \textbf{Executive Director (Founder \& CEO) at Softroad}\\
-		(February 2004 -- October 2007)
-\item \textbf{Developer \& System Administrator, remotely while a student}\\
-		(June 2002 -- January 2004)
+\item \textbf{升级异步消息系统}
+\setlength{\itemindent}{.2in}
+\item 将内存异步消息队列修改为外部消息队列
+\item 增加redis，优化推送逻辑，降低GPU机器load
+\setlength{\itemindent}{0in}
+\item 对接微信服务号，设计微信报警系统，进行微信报警消息推送
+\setlength{\itemindent}{.2in}
+\item 设计实现web端播放接口、app端推送开关接口
+\setlength{\itemindent}{0in}
+\end{itemize}
+
+\divider
+
+\cvevent{船舶轨迹数据存储系统设计与轨迹相似性算法设计实现}{\url{https://github.com/lzz5235/AIS}}{2016.7 - 2018.3}{中国科学院软件研究所}
+\begin{itemize}
+\item 对多源船舶轨迹数据进行预处理
+\item 采用密度聚类算法/层次聚类算法对航迹和停泊点进行挖掘
+\item 对聚类结果航迹绘制
+\end{itemize}
+
+\divider
+%\cvevent{基于QGIS的卫星图像软件的二次开发(C++)}{QGIS软件可以对大量的卫星图像数据进行管理，但是该软件存在大量Bug，\\操作过程中经常崩溃。通过断点跟踪和代码分析进行Bugfix,利用\\GDAL建立图像金字塔优化图片加载缓慢的问题。}{2016.7 - 2018.7}{中国科学院软件研究所}
+
+%\addnextpagesidebar[-1ex]{page2sidebar}
+
+\cvevent{海军作战系统通信协议模块与信息管理模块开发(C++)}{按照接口协议实现发送端和接收端,发送端和接收端采取组播形式通信。}{2016.7 - 2018.7}{中国科学院软件研究所}
+\begin{itemize}
+\item \textbf{协议为基于UDP的可靠数据传输，完成卫星信息通讯}
+\item \textbf{按照需求设计数据库表结构,编写基于Qt的信息管理模块,完成该任务\\规划模块的界面设计和数据库交互}
+\end{itemize}
+
+\divider
+
+\cvevent{内存多Bit错误修复内核模块开发(C/Linux Kernel)}{分析当前MCA内核子系统的工作原理，修改Kenrel Machine Check Exception的工作流程，达到服务器Kernal的平稳运行}{2014.8 - 2015.9}{兰州大学}
+\begin{itemize}
+\item \textbf{使用PALLOC+LXC+CRIU 进行错误抑制与错误隔离，配合使用在线内存检测与离线内存检测方式，\\ 达到服务器的平稳运行}
+\item \textbf{编写大量桩模块，进程/内核线程配合 MCA 的处理。}
 \end{itemize}
 
 %\cvsection{Projects}

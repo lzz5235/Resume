@@ -47,6 +47,7 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{indentfirst}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -65,7 +66,7 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Xuting}{Zhang}{{No.4 South Fourth Street, Zhongguancun, Beijing}\\
+\namesection{Xuting}{Zhang}{{Beijing, China}\\
 \href{mailto:zhangxuting91@163.com}{zhangxuting91@163.com} | +8615651232558
 }
 
@@ -145,76 +146,53 @@ Telfer School of Management
 %     Marketing & Related Experience
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Marketing \& Related Experience}
+\section{Work Experience}
+\runsubsection{Cinsos Consulting Corporation}
+\descript{Core Team Member}
+\location{Jul 2019 - Aug 2019 | Beijing, China}
+Industrial Real Estate Positioning Project
+\vspace{\topsep} 
+\begin{tightemize}
+\item Collect and sort target city’s macro environment, industrial development and second-hand information
+\item Do 100 groups of enterprises with field research, and make sure customers’ real needs about plant
+\item Research 6 industrial parks (Competitors) to learn about their marketing strategy
+\item Write the research report and assist the client to make positioning decision
+\end{tightemize}
+\sectionsep
+
+\runsubsection{S\&P Consulting Ltd.}
+\descript{Project Manager}
+\location{Nov 2018 – Jul 2019 | Beijing, China}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Conduct team members to complete the consulting project service, and formulate the schedule to control the project progress
+\item Do research with important segment, communicate with customers about progress and short-term results in time, and ensure to carry out the project smoothly
+\item Build the project reporting framework and control the overall logic, and report to clients 
+\item Cooperate with BD manager to write proposals and research plans, etc.
+\end{tightemize}
+\hspace*{0.6cm} Completed more than 20 projects about market entry and competitor research, including FMCG, real estate, new energy and many other industries.  
+\sectionsep
+
+\runsubsection{S\&P Consulting Ltd.}
+\descript{Analyst}
+\location{ Aug 2017 - Nov 2018 | Beijing, China}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Collect and sort related industry data, policies and other second-hand information, acquaint with the current market situation and development trend
+\item Acquire relevant information of target companies by telephone interview or field research, and provide support for making conclusions
+\item Organize research data and information, and summarize market research reports with project manager
+\end{tightemize}
+\sectionsep
+
 \runsubsection{CRTC MICHEL CLOUTIER Project}
-\descript{Top 3 and prize money is awarded.}
-\location{Sep 2016 | Ottawa, Canada}
+\descript{}
+\location{Sep 2016 - Jul 2017 | Ottawa, Canada}
 \vspace{\topsep}
 \begin{tightemize}
 \item Do the primary research (online questionnaire) and secondary research 
 \item Write the relative report according to the market research
 \item Find the issues and present strategic recommendations to CRTC’s Chairman and managers
 \end{tightemize}
-\sectionsep
-
-\runsubsection{Intopia Simulation}
-\descript{Strategic Management Teamwork}
-\location{July 2016 | Ottawa, Canada}
-\vspace{\topsep}
-\begin{tightemize}
-\item Simulated Intopia business game with other 30 teams
-\item Analyze the real case and provide strategic recommendations
-\item Share the experience of running a business
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Administrative assistant}
-\descript{I did this job in Lian Life Insurance Ltd.}
-\location{July 2016 – Sep 2016 | Changzhou, China}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Informing all teams attend the meeting on time
-\item Helped managers and customers to check insurance contacts
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Business Communication Skills}
-\descript{}
-\location{ Sep 2015 | Ottawa, Canada}
-\vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-\item Wrote memo and presented problems and recommendations to Chief Executive Officer 
-\item Developed communication skills within the organization
-\end{tightemize}
-\sectionsep
-
-\runsubsection{Sales Manager Assistant}
-\descript{}
-\location{Jan 2013 – Feb 2013 | Changzhou, China}
-\vspace{\topsep}
-\begin{tightemize}
-\item Helped sales manager to answer calls 
-\item Improved the ability of building customers relationship
-\end{tightemize}
-\sectionsep
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     Leadership & Activities
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Activities} 
-\runsubsection{CRTC(Canadian Radio-television and Telecommunications Commission)MICHEL CLOUTIER Project}
-\descript{Top 3 Team and Prize award}
-\location{Sep 2016 - Dec 2016 | Ottawa, Canada}
-\vspace{\topsep}
-\sectionsep
-
-\runsubsection{International Mathematics Competitions}
-\descript{Taking part in Galois, Fermat, and Euclid competitions}
-\location{Feb 2011 – Apr 2012 | Beijing, China}
-\vspace{\topsep}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -224,8 +202,6 @@ Telfer School of Management
 \section{Awards} 
 \begin{tabular}{rll}
 2016.12      & CRTC’s semi-final presentation and win the top 3 \\ 
-2012.5       & Beijing Outstanding Student \\
-2011.11	     & Modeling Contest Honorable Award \\
 \end{tabular}
 \sectionsep
 

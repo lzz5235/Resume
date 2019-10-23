@@ -94,37 +94,40 @@
 %% \cvsection title in the "main" bar.
 \cvsection[page1sidebar]{项目经历}
 
-\cvevent{摄像头云存储支付系统升级与对接(Java)}{接入小米支付系统,对接摄像头VIP用户,为付费用户提供更多的个性化服务}{2018.10 - 至今}{小米科技}
+\cvevent{音视频云存储服务重构与优化}{提升服务可靠性与弹性，缩减机器成本，提升服务效率}{2019.6 - 至今}{小米科技}
 \begin{itemize}
-\setlength{\itemindent}{.2in}
-\item 对接小米全球支付(web支付和米家小米钱包SDK支付)
-\item 对接apple pay支付
+\item 从rose框架升级springboot框架
+\item 音频转码服务JNI优化/GC调优
+\item 服务容器化
 \end{itemize}
 
 \divider
 
-\cvevent{猫眼低功耗设备人脸识别模块研发(Java)}{对接人脸算法模块，将人脸算法集成到米家App，完成猫眼对家人头像\\的管理与识别}{2018.7 - 2018.10}{小米科技}
-
+\cvevent{云存储支付系统研发}{接入小米支付,对接云存储VIP用户,为付费用户提供更多的个性化服务}{2019.1 - 2019.6}{小米科技}
 \begin{itemize}
-\item \textbf{设计人脸识别pipeline}
-\item \textbf{设计实现人脸识别异步消息系统}
-\item \textbf{设计实现人脸识别数据表结构}
+\item 对接小米全球支付(Web支付和小米钱包SDK支付)
+\item 对接Apple Pay支付
+\item 设计实现会员自动扣费系统
 \end{itemize}
 
 \divider
 
-\cvevent{摄像头报警推送系统研发(Java)}{对接人形算法模块，将人形算法集成到米家摄像头App，降低报警推送误报率}{2018.3 - 2018.10}{小米科技}
+\cvevent{人形识别/人脸识别推送系统研发}{将人形识别、人脸识别算法模块集成到米家App，降低报警推送误报率}{2018.10 - 2019.1}{小米科技}
 
 \begin{itemize}
-\item \textbf{升级异步消息系统}
-\setlength{\itemindent}{.2in}
-\item 将内存异步消息队列修改为外部消息队列
-\item 增加redis，优化推送逻辑，降低GPU机器load
-\setlength{\itemindent}{0in}
-\item 对接微信服务号，设计微信报警系统，进行微信报警消息推送
-\setlength{\itemindent}{.2in}
-\item 设计实现web端播放接口、app端推送开关接口
-\setlength{\itemindent}{0in}
+\item 设计人脸识别pipeline
+\item 实现人形识别、人脸识别异步消息系统
+\item 对接微信公众平台，设计实现微信报警消息推送
+\item 实现基于Web的报警视频HLS流播放接口
+\end{itemize}
+
+\divider
+
+\cvevent{音视频云存储系统研发}{对接摄像头设备，存储与下发摄像头的视频分片}{2018.3 - 2018.10}{小米科技}
+
+\begin{itemize}
+\item 设计实现云存储视频存储模块
+\item 设计实现云存储视频播放模块，提供播放HLS流接口
 \end{itemize}
 
 \divider
@@ -133,19 +136,19 @@
 \begin{itemize}
 \item 对多源船舶轨迹数据进行预处理
 \item 采用密度聚类算法/层次聚类算法对航迹和停泊点进行挖掘
-\item 对聚类结果航迹绘制
+\item 对聚类航迹和停泊点结果进行绘制
 \end{itemize}
 
-\divider
+%\divider
 %\cvevent{基于QGIS的卫星图像软件的二次开发(C++)}{QGIS软件可以对大量的卫星图像数据进行管理，但是该软件存在大量Bug，\\操作过程中经常崩溃。通过断点跟踪和代码分析进行Bugfix,利用\\GDAL建立图像金字塔优化图片加载缓慢的问题。}{2016.7 - 2018.7}{中国科学院软件研究所}
 
 %\addnextpagesidebar[-1ex]{page2sidebar}
 
-\cvevent{海军作战系统通信协议模块与信息管理模块开发(C++)}{按照接口协议实现发送端和接收端,发送端和接收端采取组播形式通信。}{2016.7 - 2018.7}{中国科学院软件研究所}
-\begin{itemize}
-\item \textbf{协议为基于UDP的可靠数据传输，完成卫星信息通讯}
-\item \textbf{按照需求设计数据库表结构,编写基于Qt的信息管理模块,完成该任务\\规划模块的界面设计和数据库交互}
-\end{itemize}
+%\cvevent{海军作战系统通信协议模块与信息管理模块开发(C++)}{按照接口协议实现发送端和接收端,发送端和接收端采取组播形式通信。}{2016.7 - 2018.7}{中国科学院软件研究所}
+%\begin{itemize}
+%\item \textbf{协议为基于UDP的可靠数据传输，完成卫星信息通讯}
+%\item \textbf{按照需求设计数据库表结构,编写基于Qt的信息管理模块,完成该任务\\规划模块的界面设计和数据库交互}
+%\end{itemize}
 
 \divider
 

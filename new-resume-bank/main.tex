@@ -1,0 +1,201 @@
+%%%%%%%%%%%%%%%%%
+% This is Yoann E. A. Le Bihan's CV based on the altacv.cls template
+% (v1.1.3, 30 April 2017) written by LianTze Lim (liantze@gmail.com).
+% Now compiles with pdfLaTeX, XeLaTeX and LuaLaTeX.
+% 
+%% It may be distributed and/or modified under the
+%% conditions of the LaTeX Project Public License, either version 1.3
+%% of this license or (at your option) any later version.
+%% The latest version of this license is in
+%%    http://www.latex-project.org/lppl.txt
+%% and version 1.3 or later is part of all distributions of LaTeX
+%% version 2003/12/01 or later.
+%%%%%%%%%%%%%%%%
+
+%% If you need to pass whatever options to xcolor
+\PassOptionsToPackage{dvipsnames}{xcolor}
+
+%% If you are using \orcid or academicons
+%% icons, make sure you have the academicons 
+%% option here, and compile with XeLaTeX
+%% or LuaLaTeX.
+% \documentclass[10pt,a4paper,academicons]{altacv}
+
+%% Use the "normalphoto" option if you want a normal photo instead of cropped to a circle
+% \documentclass[10pt,a4paper,normalphoto]{altacv}
+
+\documentclass[10pt,a4paper]{altacv}
+
+%% AltaCV uses the fontawesome and academicon fonts
+%% and packages. 
+%% See texdoc.net/pkg/fontawecome and http://texdoc.net/pkg/academicons for full list of symbols.
+%% 
+%% Compile with LuaLaTeX for best results. If you
+%% want to use XeLaTeX, you may need to install
+%% Academicons.ttf in your operating system's font 
+%% folder.
+
+
+% Change the page layout if you need to
+\geometry{left=1cm,right=9cm,marginparwidth=6.8cm,marginparsep=1.2cm,top=1.25cm,bottom=1.25cm,footskip=2\baselineskip}
+
+% Change the font if you want to.
+
+% If using pdflatex:
+\usepackage{CJKutf8} 
+
+% If using xelatex or lualatex:
+\setmainfont{SimSun}
+
+% Change the colours if you want to
+\definecolor{Mulberry}{HTML}{72243D}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{heading}{Sepia}
+\colorlet{accent}{Mulberry}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Change the bullets for itemize and rating marker
+% for \cvskill if you want to
+\renewcommand{\itemmarker}{{\small\textbullet}}
+\renewcommand{\ratingmarker}{\faCircle}
+
+%% sample.bib contains your publications
+%\addbibresource{sample.bib}
+
+\begin{document}
+\name{李肇中}
+\tagline{服务端开发工程师}
+%\photo{1.5cm}{Yo_prof.jpg}
+\personalinfo{%
+  % Not all of these are required!
+  % You can add your own with \printinfo{symbol}{detail}
+  \email{\url{ldm5235@gmail.com}}
+  \phone{+86 18510253518}
+  %\mailaddress{Address, Street, 00000 County}
+  %\location{Beijing}\\
+  \homepage{\url{https://www.lizhaozhong.info}}
+  %\homepage{\url{http://lzz5235.github.io}}
+  \linkedin{\url{https://www.linkedin.com/in/lizhaozhong/}}
+  \github{\url{https://github.com/lzz5235}}
+  %% You MUST add the academicons option to \documentclass, then compile with LuaLaTeX or XeLaTeX, if you want to use \orcid or other academicons commands.
+%   \orcid{orcid.org/0000-0000-0000-0000}
+}
+
+%% Make the header extend all the way to the right, if you want. 
+\begin{fullwidth}
+\makecvheader
+\end{fullwidth}
+
+%% Provide the file name containing the sidebar contents as an optional parameter to \cvsection.
+%% You can always just use \marginpar{...} if you do
+%% not need to align the top of the contents to any
+%% \cvsection title in the "main" bar.
+\cvsection[page1sidebar]{项目经历}
+
+\cvevent{云存储支付系统研发}{为云存储VIP用户提供更多的个性化服务，完成各类运营需求}{2018.11 - 至今}{小米科技}
+\begin{itemize}
+\item 对接小米全球支付(支付宝/微信/印度支付/印尼支付)
+\item 对接Apple Pay/Apple Subcribe
+\item 设计实现会员自动续费系统，完成会员到期扣费功能
+\item 设计实现支付成功异步队列，供数据组/运营组进行数据分析
+\item 实现各类工具脚本供数据组/运营组使用
+\end{itemize}
+
+\divider
+
+%\cvevent{人形识别/人脸识别推送系统研发}{将人形识别、人脸识别算法模块集成到米家App，降低报警推送误报率}{2018.9 - 2018.11}{小米科技}
+
+%\begin{itemize}
+%\item 设计人脸识别 pipeline
+%\item 实现人形识别、人脸识别异步消息系统
+%\item 对接微信公众平台，设计实现微信报警消息推送
+%\end{itemize}
+
+%\divider
+
+\cvevent{音视频云存储服务重构与优化}{提升服务可靠性与弹性，缩减机器成本，提升服务效率}{2018.6 - 2018.9}{小米科技}
+\begin{itemize}
+\item 从 rose 框架升级 springboot 框架
+\item 接口熔断限流层开发
+\item 音频转码服务JNI优化/GC调优
+\item 服务容器化，部署到公司 k8s 平台
+\end{itemize}
+
+\divider
+
+\cvevent{音视频云存储系统研发}{对接摄像头设备，存储与下发摄像头的视频分片}{2018.3 - 2018.6}{小米科技}
+
+\begin{itemize}
+\item 实现云存储视频存储模块（金山云/阿里云）
+\item 实现云存储视频播放模块，提供播放 HLS 流接口
+\item 设计实现基于Web的报警视频 HLS 流播放接口
+\end{itemize}
+
+\divider
+
+\cvevent{船舶轨迹数据存储系统设计与轨迹相似性算法设计实现}{\url{https://github.com/lzz5235/AIS}}{2016.7 - 2018.3}{中国科学院软件研究所}
+\begin{itemize}
+\item 对多源船舶轨迹数据进行预处理
+\item 采用密度聚类算法/层次聚类算法对航迹和停泊点进行挖掘
+\item 对聚类航迹和停泊点结果进行绘制
+\end{itemize}
+
+%\divider
+%\cvevent{基于QGIS的卫星图像软件的二次开发(C++)}{QGIS软件可以对大量的卫星图像数据进行管理，但是该软件存在大量Bug，\\操作过程中经常崩溃。通过断点跟踪和代码分析进行Bugfix,利用\\GDAL建立图像金字塔优化图片加载缓慢的问题。}{2016.7 - 2018.7}{中国科学院软件研究所}
+
+%\addnextpagesidebar[-1ex]{page2sidebar}
+
+%\cvevent{海军作战系统通信协议模块与信息管理模块开发(C++)}{按照接口协议实现发送端和接收端,发送端和接收端采取组播形式通信。}{2016.7 - 2018.7}{中国科学院软件研究所}
+%\begin{itemize}
+%\item \textbf{协议为基于UDP的可靠数据传输，完成卫星信息通讯}
+%\item \textbf{按照需求设计数据库表结构,编写基于Qt的信息管理模块,完成该任务\\规划模块的界面设计和数据库交互}
+%\end{itemize}
+
+\divider
+
+\cvevent{内存多Bit错误修复内核模块开发(C/Linux Kernel)}{分析当前MCA内核子系统的工作原理，修改Kenrel Machine Check Exception的工作流程，达到服务器Kernal的平稳运行}{2014.8 - 2015.9}{兰州大学}
+\begin{itemize}
+\item \textbf{使用PALLOC+LXC+CRIU 进行错误抑制与错误隔离，配合使用在线内存检测与离线内存检测方式，\\ 达到服务器的平稳运行}
+\item \textbf{编写大量桩模块，进程/内核线程配合 MCA 的处理。}
+\end{itemize}
+
+%\cvsection{Projects}
+
+%\cvevent{Project 1}{Funding agency/institution}{}{}
+%\begin{itemize}
+%\item Details
+%\end{itemize}
+
+%\divider
+
+%\cvevent{Project 2}{Funding agency/institution}{Project duration}{}
+%A short abstract would also work.
+
+%\medskip
+
+%\cvsection{A Day of My Life}
+
+% Adapted from @Jake's answer from http://tex.stackexchange.com/a/82729/226
+% \wheelchart{outer radius}{inner radius}{
+% comma-separated list of value/text width/color/detail}
+%\wheelchart{1.5cm}{0.5cm}{%
+%  6/8em/accent!30/{Sleep,\\beautiful sleep}, 
+%  3/8em/accent!40/Hopeful novelist by night,
+%  8/8em/accent!60/Daytime job,
+%  2/10em/accent/Sports and relaxation,
+%  5/6em/accent!20/Spending time with family
+%}
+
+%% To start a (new) clear page
+%\clearpage
+
+%% If the NEXT page doesn't start with a \cvsection but you'd
+%% still like to add a sidebar, then use this command on THIS
+%% page to add it. The optional argument lets you pull up the 
+%% sidebar a bit so that it looks aligned with the top of the
+%% main column.
+% \addnextpagesidebar[-1ex]{page3sidebar}
+
+\end{document}
